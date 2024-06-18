@@ -12,6 +12,7 @@
   --text-gray: #3d3d3d;
   --text-dark: #242424;
   --text-shadow: rgba(0, 0, 0, 0.4);
+  scroll-behavior: smooth;
 }
 
 body {
@@ -19,11 +20,15 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+section {
+  margin-bottom: 4.5rem;
+}
+
+h1,h2,h3,h4,p,span {
+  transition: 0.3s ease;
 }
 
 ul,
@@ -41,7 +46,6 @@ a {
   transition: 0.5s ease;
 }
 a:hover {
-  /* color: #7d7d7d; */
   cursor: pointer;
 }
 
@@ -71,4 +75,10 @@ img {
   width: 100%;
   height: 100%;
   display: block;
+}
+
+@media screen and(min-width: 768) {
+  section {
+    margin-bottom: 6.5rem;
+  }
 }
