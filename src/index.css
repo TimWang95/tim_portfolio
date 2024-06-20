@@ -31,6 +31,7 @@ section {
 }
 
 h1,h2,h3,h4,p,span {
+  color: var(--text-dark);
   transition: 0.3s ease;
 }
 
