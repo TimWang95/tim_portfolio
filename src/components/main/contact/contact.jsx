@@ -23,7 +23,7 @@ function Icon(){
 export default function Contact(){
   return (
     <section className="contact" id="contact">
-      <p>Git in touch</p>
+      <p>Get in touch</p>
       <Icon/>
     </section>
   )
