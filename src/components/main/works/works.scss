@@ -1,0 +1,157 @@
+.works {
+  padding: 1rem 5rem;
+  
+  h2 {
+
+  }
+
+  .work {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    &__img {
+      min-width: 400px;
+      height: 300px;
+      transition: 0.3s ease;
+      
+      img {
+        object-fit: cover;
+        object-position: top;
+        border-radius: 15px;
+      }
+
+      &:hover {
+        border-radius: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        transform: scale(1.05);
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+
+      .title {
+        font-size: 1.3rem;
+      }
+      
+      &__btns {
+        display: flex;
+        gap: 1rem;
+
+        .btn {
+          display: flex;
+          
+          a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--btn-gray);
+            border-radius: 8px;
+            
+            .img__box {
+              width: 30px;
+              height: 30px;
+            }
+          }
+          
+          .demo {
+            background: var(--btn-gray);
+            color: var(--text-light);
+            .img__box {
+              filter: invert(100%);
+            }
+          }
+    
+          .repo {
+            color: var(--btn-gray);
+          }
+
+          .demo:hover {
+            background: none;
+            color: var(--btn-gray);
+            .img__box  {
+              height: 30px;
+              filter: unset;
+            }
+          }
+
+          .repo:hover {
+            background: var(--btn-gray);
+            color: var(--text-light);
+            
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .works {
+    
+    h2 {
+  
+    }
+  
+    .work {
+      flex-direction: row;
+      justify-content: center;
+      align-items: flex-end;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+      
+      &__img{
+        width: 500px;
+        height: 380px;
+
+        img {
+        }
+      }
+  
+      &__content {
+        align-items: flex-start;
+        margin: 0;
+
+
+        .title {
+          font-size: 1.5rem;
+        }
+        
+        &__btns {
+  
+          .btn {
+            
+            a {
+              
+              .img__box {
+              }
+            }
+            
+            .demo {
+              .img__box {
+              }
+            }
+      
+            .repo {
+            }
+  
+            .demo:hover {
+              .img__box  {
+              }
+            }
+  
+            .repo:hover {
+              
+            }
+          }
+        }
+      }
+    }
+  }
+}
