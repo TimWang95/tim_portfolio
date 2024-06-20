@@ -44,13 +44,14 @@ function Menu(){
   )
 }
 
-function HamBurger({onClick}){
+function Burger({ onClick }){
   return (
-    <button onClick={onClick} className='burger__container'>
+    <label htmlFor="burger" className='burger__container' >
+      <input type="checkbox" id='burger' onClick={onClick}/>
       <div className='burger__line line-1'></div>
       <div className='burger__line line-2'></div>
       <div className=' burger__line line-3'></div>
-    </button>
+    </label>
   )
 }
 
@@ -58,14 +59,16 @@ export default function Header(){
   const { width } = useWidthSize();
   const { active, handleToggle, setActive } = useActive();
   const headerRef = useRef(null);
-
+    
   useEffect(() => {
     function handleClickOutside(e) {
       if(headerRef.current && !headerRef.current.contains(e.target)) {
         setActive(false);
+      
+        document.getElementById('burger').checked = false;
       }
     }
-
+    
     document.addEventListener('mousedown', handleClickOutside);
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
@@ -77,7 +80,7 @@ export default function Header(){
         <header className="header" ref={headerRef}>
           {/* moblie */}
           {width < 768 && (
-            <HamBurger onClick={handleToggle}/>
+            <Burger onClick={handleToggle}/>
           )}
           {!active ? (
             null

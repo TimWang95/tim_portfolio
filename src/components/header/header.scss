@@ -1,5 +1,5 @@
 .header{
-  position: absolute;
+  position: fixed;
   right: 0;
   max-width: 250px;
   width: 100%;
@@ -20,18 +20,36 @@
     width: 50px;
     height: 50px;
     z-index: 99;
-
     cursor: pointer;
 
-    .burger__line {
-      width: 25px;
-      height: 3px;
-      background: #fff;
+    input {
+      display: none;
     }
 
-    .line-1 {}
-    .line-2 {}
-    .line-3 {}
+    .burger__line {
+      width: 28px;
+      height: 3px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      transition: 0.3s ease;
+    }
+
+    input:checked ~ .line-1 {
+      position: absolute;
+      top: 23px;
+      transform: rotate(45deg);
+      
+    }
+    input:checked ~ .line-2 {
+      opacity: 0;
+      transform: translateX(-10px);
+    }
+    input:checked ~ .line-3 {
+      position: absolute;
+      top: 23px;
+      transform: rotate(-45deg);
+    }
   }
 
   .nav {
@@ -67,17 +85,16 @@
 
 @media screen and (min-width: 768px) {
   .header{
-    max-width: none;
-    max-height: 4.5rem;
     position: absolute;
     top: 0;
+    max-width: none;
+    max-height: 4.5rem;
     
     .burger__container {
       display: none;
     }
     
     .nav {
-      background: none;
       display: flex;
       justify-content: flex-end;
       margin: 0;
