@@ -85,8 +85,8 @@
 
 @media screen and (min-width: 768px) {
   .header{
-    position: absolute;
-    top: 0;
+    // position: absolute;
+    // top: 0;
     max-width: none;
     max-height: 4.5rem;
     
@@ -111,6 +111,11 @@
           }
         }
       }
+    }
+
+    .scrolled {
+      background: rgba(0, 0, 0, 0.5);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
   }
 }

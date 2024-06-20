@@ -1,10 +1,10 @@
-import { useRef, useEffect } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import useWidthSize from 'src/hooks/useWidthSize';
 import useActive from 'src/hooks/useActive';
 
-function Menu(){
+function Menu({scrolled}){
   return (
-    <nav className="nav">
+    <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <ul className="nav__list">
         <li className="nav__list__item">
             <a href="#home">
@@ -59,6 +59,7 @@ export default function Header(){
   const { width } = useWidthSize();
   const { active, handleToggle, setActive } = useActive();
   const headerRef = useRef(null);
+  const [ scrolled, setScrolled ] = useState(false);
     
   useEffect(() => {
     function handleClickOutside(e) {
@@ -68,10 +69,17 @@ export default function Header(){
         document.getElementById('burger').checked = false;
       }
     }
+
+    function handleScroll() {
+      const isScrolled = window.scrollY > 0 ;
+      setScrolled(isScrolled);
+    }
     
     document.addEventListener('mousedown', handleClickOutside);
+    window.addEventListener('scroll', handleScroll)
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
+      window.removeEventListener('scroll', handleScroll);
     }
   }, [setActive])
 
@@ -90,7 +98,7 @@ export default function Header(){
 
           {/* desktop */}
           {(width >= 768 && active == false) && (
-            <Menu/>
+            <Menu scrolled={scrolled}/>
           )}
         </header>
     </>
