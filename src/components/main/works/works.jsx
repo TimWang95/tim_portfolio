@@ -42,15 +42,15 @@ export default function Works(){
               <div className="btn">
                 <NavLink to={item.demoUrl} className="demo">
                   <div className="img__box">
-                      <GithubIcon width="100%" height="100%"/>
-                    </div>
-                    Demo
+                    <EyeIcon width="100%" height="100%"/>
+                  </div>
+                  Demo
                 </NavLink>
               </div>
               <div className="btn">
                 <NavLink to={item.repoUrl} className="repo">
                   <div className="img__box">
-                    <EyeIcon width="100%" height="100%"/>
+                    <GithubIcon width="100%" height="100%"/>
                   </div>
                   Repo
                 </NavLink>

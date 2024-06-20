@@ -64,7 +64,6 @@
             background: var(--btn-gray);
             color: var(--text-light);
             .img__box {
-              filter: invert(100%);
             }
           }
     
@@ -75,9 +74,8 @@
           .demo:hover {
             background: none;
             color: var(--btn-gray);
+            
             .img__box  {
-              height: 30px;
-              filter: unset;
             }
           }
 
@@ -85,6 +83,9 @@
             background: var(--btn-gray);
             color: var(--text-light);
             
+            .img__box {
+              filter: invert(100%);
+            }
           }
         }
       }
