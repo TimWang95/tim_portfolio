@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react';
-import { NavLink } from 'react-router-dom';
 import useWidthSize from 'src/hooks/useWidthSize';
 import useActive from 'src/hooks/useActive';
 
@@ -8,37 +7,37 @@ function Menu(){
     <nav className="nav">
       <ul className="nav__list">
         <li className="nav__list__item">
-          <NavLink to="/">
-            <span>Home</span>
-          </NavLink>
+            <a href="#home">
+              <span>Home</span>
+            </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-          <NavLink to="/">
+            <a href="#about">
             <span>About</span>
-          </NavLink>
+            </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-          <NavLink to="/">
-            <span>Skills</span>
-          </NavLink>
+            <a href="#skills">
+              <span>Skills</span>
+            </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-          <NavLink to="/">
-            <span>Project</span>
-          </NavLink>
+            <a href="#works">
+              <span>Project</span>
+            </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-          <NavLink to="/">
-            <span>Contact</span>
-          </NavLink>
+            <a href="#contact">
+              <span>Contact</span>
+            </a>
         </li>
       </ul>
     </nav>
