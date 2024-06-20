@@ -9,10 +9,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   --text-light: #fff;
+  --text-300: #9d9d9d;
   --text-gray: #3d3d3d;
   --text-dark: #242424;
   --text-shadow: rgba(0, 0, 0, 0.4);
   --btn-gray: #5d5d5d;
+  --footer-bg: #5d5d5d;
   scroll-behavior: smooth;
 }
 
@@ -33,6 +35,10 @@ section {
 h1,h2,h3,h4,p,span {
   color: var(--text-dark);
   transition: 0.3s ease;
+}
+
+p,span {
+  font-size: 1rem;
 }
 
 ul,
@@ -81,9 +87,13 @@ img {
   display: block;
 }
 
-@media screen and(min-width: 768) {
+@media screen and (min-width: 768px) {
   section {
     margin-bottom: 6.5rem;
     padding: 2rem 5rem;
+  }
+
+  p,span {
+    font-size: 1.2rem;
   }
 }

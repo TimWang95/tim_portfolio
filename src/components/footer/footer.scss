@@ -1,0 +1,45 @@
+.footer {
+  position: relative;
+  display: flex;
+  margin: 0;
+  
+  .row {
+    p {
+      margin: 0;
+      color: var(--text-300);
+    }
+  }
+  
+  .arrow {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 50px;
+    height: 50px;
+
+    &:hover {
+      bottom: 1.5rem;
+      animation: rotate 0.7s ease;
+    } 
+  }
+  
+}
+
+@keyframes rotate {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+
+@media screen and (min-width: 768px) {
+  .footer {
+    .row {
+      p {
+        font-size: 1.1rem;
+      }
+    }
+  
+    .arrow {
+    }
+  }
+}

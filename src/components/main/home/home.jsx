@@ -20,7 +20,7 @@ export default function Home(){
   ]
   
   return (
-    <section className="home">
+    <section className="home" id='home'>
       <Swiper 
         modules={[Autoplay, EffectFade]}
         autoplay={{ delay: 4000}}

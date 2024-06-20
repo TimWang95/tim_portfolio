@@ -2,6 +2,7 @@ import Home from './home/home';
 import About from './about/about';
 import Skills from './skills/skills';
 import Works from './works/works';
+import Contact from './contact/contact';
 
 export default function Main(){
   return (
@@ -10,6 +11,7 @@ export default function Main(){
       <About/>
       <Skills/>
       <Works/>
+      <Contact/>
     </main>
   )
 }

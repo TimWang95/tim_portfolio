@@ -1,0 +1,33 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items:start;
+  margin: 0;
+
+  p {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+  &__container {
+    display: flex;
+    gap: 1.5rem;
+    
+    .icon {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      transition: 0.3s ease;
+      
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    
+    &:has(.icon:hover) > :not(:hover) {
+      transform: scale(0.9);
+      opacity: 0.5;
+    }
+  }
+}

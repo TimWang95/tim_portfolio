@@ -28,7 +28,7 @@ const worksData = [
 export default function Works(){
   
   return (
-    <section className="works">
+    <section className="works" id='works'>
       <h2>My Works</h2>
       {worksData.map((item, index) => (
         <div className="work" key={index}>
