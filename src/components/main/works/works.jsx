@@ -6,19 +6,19 @@ import EyeIcon from 'src/assets/eye-outline.svg?react';
 const worksData = [
   {
     title: "Space Tourism",
-    imgUrl: "src/assets/space-tourism.png",
+    imgUrl: "/space-tourism.png",
     demoUrl: "https://main--luminous-basbousa-303c8a.netlify.app/",
     repoUrl: "https://github.com/TimWang95/space-tourism-website",
   },
   {
     title: "Room Homepage",
-    imgUrl: "src/assets/04-room-homepage.jpg",
+    imgUrl: "/04-room-homepage.jpg",
     demoUrl: "https://main--radiant-dusk-efc6d4.netlify.app/#home",
     repoUrl: "https://github.com/TimWang95/room-homepage",
   },
   {
     title: "Sunnyside",
-    imgUrl: "src/assets/05-sunnyside-agency-landing-page.jpg",
+    imgUrl: "/05-sunnyside-agency-landing-page.jpg",
     demoUrl: "https://lucent-praline-ec32b2.netlify.app/",
     repoUrl: "https://github.com/TimWang95/sunnyside-agency-landing-page",
   }

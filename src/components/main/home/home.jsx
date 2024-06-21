@@ -5,9 +5,6 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import './home.scss';
 
-// import img from 'src/assets/tim1.jpg'
-// ../../../../public/tim1.jpg
-
 export default function Home(){
   const slides = [
     {
