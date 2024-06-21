@@ -5,15 +5,18 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import './home.scss';
 
+// import img from 'src/assets/tim1.jpg'
+// ../../../../public/tim1.jpg
+
 export default function Home(){
   const slides = [
     {
-      image: "src/assets/tim1.jpg",
+      image: "/tim1.jpg",
       title: "Slide 1",
       content: "Always be better than yesterday",
     },
     {
-      image: "src/assets/tim2.jpg",
+      image: "/tim2.jpg",
       title: "Slide 2",
       content: "Love Adventure & Emvrace Challenges",
     },
