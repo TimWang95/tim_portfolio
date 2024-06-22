@@ -1,6 +1,6 @@
 .skills {
   position: relative;
-
+  
   h2 {
     position: relative;
   }
@@ -25,7 +25,6 @@
         font-size: 0.65rem;
       }
     }
-
   }
 }
 
@@ -38,9 +37,10 @@
   width: 100%;
   height: 100%;
   opacity: 0.45;
-  background-image: url("src/assets/bg-img.jpg");
+  background-image: url("/bg-img.jpg");
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
 }
 
 @media screen and (min-width: 768px) {

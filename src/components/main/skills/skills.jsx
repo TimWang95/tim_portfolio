@@ -8,6 +8,7 @@ import TailwindCSSIcon from 'src/assets/skill-icons/TailwindCSS-Dark.svg?react';
 import FigmaIcon from 'src/assets/skill-icons/Figma-Dark.svg?react';
 import AIIcon from 'src/assets/skill-icons/Illustrator.svg?react';
 import PSIcon from 'src/assets/skill-icons/Photoshop.svg?react';
+import bgImg from '/bg-img.jpg';
 import 'src/components/main/skills/skills.scss';
 
 
@@ -16,7 +17,7 @@ export default function Skills() {
     <section className="skills" id='skills'>
       <h2>My Skills</h2>
       <div className="skills__box">
-          
+
         <div className="icon">
           <div className="icon__box">
             <div><JSIcon width="100%" height="100%"/></div>
@@ -86,8 +87,8 @@ export default function Skills() {
           </div>
           <p>Photoshop</p>
         </div>
-
       </div>
+
     </section>
   )
 }
