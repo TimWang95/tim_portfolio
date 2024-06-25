@@ -40,7 +40,7 @@ export default function Works(){
             <p className='title'>{item.title}</p>
             <div className="work__content__btns">
               <div className="btn">
-                <NavLink to={item.demoUrl} className="demo">
+                <NavLink to={item.demoUrl} className="demo" target='_blank'>
                   <div className="img__box">
                     <EyeIcon width="100%" height="100%"/>
                   </div>
@@ -48,7 +48,7 @@ export default function Works(){
                 </NavLink>
               </div>
               <div className="btn">
-                <NavLink to={item.repoUrl} className="repo">
+                <NavLink to={item.repoUrl} className="repo" target='_blank'>
                   <div className="img__box">
                     <GithubIcon width="100%" height="100%"/>
                   </div>
