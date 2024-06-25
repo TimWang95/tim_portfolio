@@ -14,12 +14,32 @@
 
     .icon {
       .icon__box {
+        position: relative;
         width: 65px;
         transition: 0.3s ease;
+        overflow: hidden; 
+        border-radius: 15px;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: -7px;
+          left: -10px;
+          width: 100px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.7);
+          transform: skewX(45deg) translateX(170px);
+          transition:  0.5s;
+        }
       }
       
       .icon__box:hover {
-        transform: translateY(-20px);
+        transform: scale(1.1);
+        
+        &::after {
+          transform: skewX(45deg) translateX(-150px);
+          opacity: 0;
+        }
       }
 
       p {
@@ -58,6 +78,7 @@
       .icon {
         .icon__box {
           width: 100px;
+          border-radius: 15px;
         }
         p {
           font-size: 1rem;

@@ -20,7 +20,8 @@ export default function Skills() {
 
         <div className="icon">
           <div className="icon__box">
-            <div><JSIcon width="100%" height="100%"/></div>
+            <JSIcon width="100%" height="100%"/>
+            <span className=''></span>
           </div>
           <p>JavaScript</p>
         </div>
