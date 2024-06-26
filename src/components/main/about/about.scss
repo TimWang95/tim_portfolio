@@ -1,5 +1,25 @@
 .about {
   margin-bottom: 5rem;
+  &__container {
+    position: relative;
+    text-align: start;
+
+    .resume__container {
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+      display: flex;
+      gap: 8px;
+      height: 20px; 
+
+      .icon__container{
+        
+      }
+      a:hover {
+        color: var(--text-300);
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {

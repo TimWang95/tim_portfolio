@@ -51,7 +51,7 @@ li {
 
 a {
   font-weight: 500;
-  color: #1d1d1d;
+  color: var(--text-dark);
   text-decoration: inherit;
   transition: 0.5s ease;
 }
