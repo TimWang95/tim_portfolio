@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom"
 import GithubIcon from 'src/assets/Github-Dark.svg?react';
 import CodePenIcon from 'src/assets/CodePen-Dark.svg?react';
 import GmailIcon from 'src/assets/Gmail-Dark.svg?react';
+import LinkedInIcon from 'src/assets/LinkedIn.svg?react';
 import 'src/components/main/contact/contact.scss';
 
 function Icon(){
@@ -15,6 +16,9 @@ function Icon(){
       </NavLink>
       <NavLink to="mailto: tgm761@gmail.com" className="icon icon__email">
         <GmailIcon width="100%" height="100%"/>
+      </NavLink>
+      <NavLink to="https://www.linkedin.com/in/tim-wang-296b64143/" className="icon icon__linkedIn" target="_blank">
+        <LinkedInIcon width="100%" height="100%"/>
       </NavLink>
     </div>
   )
