@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import useWidthSize from 'src/hooks/useWidthSize';
 import useActive from 'src/hooks/useActive';
 
@@ -7,35 +8,35 @@ function Menu({scrolled}){
     <nav className={`nav ${scrolled ? "scrolled" : ""}`}>
       <ul className="nav__list">
         <li className="nav__list__item">
-            <a href="#home">
+            <a href="/#home">
               <span>Home</span>
             </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-            <a href="#about">
+            <a href="/#about">
             <span>About</span>
             </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-            <a href="#skills">
+            <a href="/#skills">
               <span>Skills</span>
             </a>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-            <a href="#works">
+            <NavLink to="/works">
               <span>Project</span>
-            </a>
+            </NavLink>
         </li>
       </ul>
       <ul className="nav__list">
         <li className="nav__list__item">
-            <a href="#contact">
+            <a href="/#contact">
               <span>Contact</span>
             </a>
         </li>

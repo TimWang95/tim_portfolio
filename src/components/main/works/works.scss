@@ -1,10 +1,18 @@
 .works {
   padding: 1rem 5rem;
-  
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-blend-mode: multiply;
+  background-image: url("/bg-img.jpg");
+  background-position: center;
+
   h2 {
 
   }
-
+  
   .work {
     position: relative;
     display: flex;
@@ -53,7 +61,8 @@
             padding: 0.5rem 1rem;
             border: 1px solid var(--btn-gray);
             border-radius: 8px;
-            
+            background-color: #fff;
+
             .img__box {
               width: 30px;
               height: 30px;
@@ -72,7 +81,7 @@
           }
 
           .demo:hover {
-            background: none;
+            background: #fff;
             color: var(--btn-gray);
             
             .img__box  {

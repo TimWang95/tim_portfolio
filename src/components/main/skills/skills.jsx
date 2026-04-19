@@ -8,7 +8,7 @@ import TailwindCSSIcon from 'src/assets/skill-icons/TailwindCSS-Dark.svg?react';
 import FigmaIcon from 'src/assets/skill-icons/Figma-Dark.svg?react';
 import AIIcon from 'src/assets/skill-icons/Illustrator.svg?react';
 import PSIcon from 'src/assets/skill-icons/Photoshop.svg?react';
-import bgImg from '/bg-img.jpg';
+import CsharpIcon from 'src/assets/skill-icons/csharp-svgrepo-com.svg?react';
 import 'src/components/main/skills/skills.scss';
 
 
@@ -46,7 +46,14 @@ export default function Skills() {
           </div>
           <p>React</p>
         </div>
-
+        
+        <div className="icon">
+          <div className="icon__box">
+            <CsharpIcon width="100%" height="100%"/>
+          </div>
+          <p>C#</p>
+        </div>
+        
         <div className="icon">
           <div className="icon__box">
             <JavaIcon width="100%" height="100%"/>

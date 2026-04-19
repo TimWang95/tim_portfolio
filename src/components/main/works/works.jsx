@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-router-dom';
 import 'src/components/main/works/works.scss';
 import GithubIcon from 'src/assets/logo-github.svg?react';
 import EyeIcon from 'src/assets/eye-outline.svg?react';
@@ -40,20 +40,30 @@ export default function Works(){
             <p className='title'>{item.title}</p>
             <div className="work__content__btns">
               <div className="btn">
-                <NavLink to={item.demoUrl} className="demo" target='_blank'>
+                <a
+                  href={item.demoUrl}
+                  className="demo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="img__box">
                     <EyeIcon width="100%" height="100%"/>
                   </div>
                   Demo
-                </NavLink>
+                </a>
               </div>
               <div className="btn">
-                <NavLink to={item.repoUrl} className="repo" target='_blank'>
+                <a
+                  href={item.repoUrl}
+                  className="repo"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <div className="img__box">
                     <GithubIcon width="100%" height="100%"/>
                   </div>
                   Repo
-                </NavLink>
+                </a>
               </div>
             </div>
           </div>

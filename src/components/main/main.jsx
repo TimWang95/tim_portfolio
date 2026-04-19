@@ -1,7 +1,7 @@
 import Home from './home/home';
 import About from './about/about';
 import Skills from './skills/skills';
-import Works from './works/works';
+// import Works from './works/works';
 import Contact from './contact/contact';
 
 export default function Main(){
@@ -10,7 +10,7 @@ export default function Main(){
       <Home/>
       <About/>
       <Skills/>
-      <Works/>
+      {/* <Works/> */}
       <Contact/>
     </main>
   )
